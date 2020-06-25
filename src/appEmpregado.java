@@ -10,11 +10,17 @@
  */
 public class appEmpregado {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Empregado empregado1 = new Empregado("Alan", "Junior", -1500);
+        
+       String nome = empregado1.getNome();
+       String sobreNome = empregado1.getSobreNome();
+       float salario = empregado1.salario();
+       
+        System.out.println(" Nome :" + nome);
+        System.out.println(" Sobre nome  :" + nome);
+        System.out.println(" Salario :" + salario);
+       
     }
-    
+
 }

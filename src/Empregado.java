@@ -32,14 +32,19 @@ public class Empregado {
     }
 
     public float getSalarioMensal() {
-        if (salarioMensal < 0) {
-            salarioMensal = 0.00f;
-        }
+
         return salarioMensal;
     }
 
     public void setSalarioMensal(float salarioMensal) {
+        
         this.salarioMensal = salarioMensal;
     }
-
+    
+    public float salario(){
+        if(salarioMensal < 0 ){
+           salarioMensal = 0.00f; 
+        }
+        return salarioMensal;
+    }
 }
