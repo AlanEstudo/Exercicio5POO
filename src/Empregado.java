@@ -37,14 +37,18 @@ public class Empregado {
     }
 
     public void setSalarioMensal(float salarioMensal) {
-        
+
         this.salarioMensal = salarioMensal;
     }
-    
-    public float salario(){
-        if(salarioMensal < 0 ){
-           salarioMensal = 0.00f; 
+
+    public float salario() {
+        if (this.salarioMensal < 0) {
+            this.salarioMensal = 0.00f;
         }
         return salarioMensal;
+    }
+
+    public void aplicaAumento(float percentualDeAumento) {
+        salarioMensal += salarioMensal * (percentualDeAumento * 0.01f);
     }
 }
